@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>News App</title>
   </head>
   <body class="bg-gray-100">
     <!-- header section -  Navbar -->
-    <header class="w-full h-16 bg-rose-600">
+    <header class="w-full h-20 bg-rose-600 shadow-xl sticky top-0 z-20">
       <nav
         class="max-w-6xl mx-auto flex justify-between items-center h-full px-2"
       >
-        <p class="text-xl text-white font-medium">News App</p>
+        <p class="text-2xl text-white font-medium">News App</p>
         <div
           class="h-10 bg-white overflow-hidden rounded-md divide-x-2 shadow-xl border border-rose-600"
         >
           <input
             type="text"
-            class="max-w-36 h-full px-3 py-1 rounded focus:outline-none"
+            class="max-w-48 h-full px-3 py-1 rounded focus:outline-none"
             placeholder="search here"
           />
           <button
@@ -35,8 +39,10 @@
     <main class="max-w-6xl mx-auto px-2">
       <!-- result & filter section -->
       <div class="py-6 flex justify-between items-center">
-        <span id="searchResult" class="text-gray-700 font-medium"
-          >1555 Results</span
+        <span
+          id="searchResult"
+          class="text-gray-700 font-medium rounded-md p-2 border-2"
+          ><span> <i class="fas fa-search"></i> </span>1555 Results</span
         >
         <div
           class="flex justify-between items-center gap-2 bg-gray-100 rounded-md p-2 border-2"
