@@ -8,8 +8,31 @@
     <title>News App</title>
   </head>
   <body>
+    <!-- header section -  Navbar -->
+    <header class="w-full h-16 bg-rose-600">
+      <nav
+        class="max-w-6xl mx-auto flex justify-between items-center h-full px-2"
+      >
+        <p class="text-xl text-white font-medium">News App</p>
+        <div
+          class="h-10 bg-white overflow-hidden rounded-md divide-x-2 shadow-xl border border-rose-600"
+        >
+          <input
+            type="text"
+            class="max-w-36 h-full px-3 py-1 rounded focus:outline-none"
+            placeholder="search here"
+          />
+          <button
+            type="button"
+            class="p-2 h-full bg-gray-200 font-medium text-rose-600"
+          >
+            Search
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  <!-- JAvascript File Linkng -->
+    <!-- JAvascript File Linkng -->
     <script src="./script.js"></script>
   </body>
 </html>
