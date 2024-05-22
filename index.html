@@ -11,7 +11,7 @@
     />
     <title>News App</title>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 space-y-4">
     <!-- header section -  Navbar -->
     <header class="w-full h-20 bg-rose-600 shadow-xl sticky top-0 z-20">
       <nav
@@ -37,13 +37,19 @@
     </header>
     <!-- main content -->
     <main class="max-w-6xl mx-auto px-2">
+      <!-- category -->
+      <div
+        id="category"
+        class="flex justify-start items-center overflow-x-auto gap-4"
+      ></div>
       <!-- result & filter section -->
       <div class="py-6 flex justify-between items-center">
-        <span
-          id="searchResult"
-          class="text-gray-700 font-medium rounded-md p-2 border-2"
-          ><span> <i class="fas fa-search"></i> </span>1555 Results</span
+        <div
+          class="text-gray-700 font-medium rounded-md p-2 text-md px-4 border-2 flex justify-center items-center gap-2"
         >
+          <i class="fas fa-search"></i>
+          <span id="searchResult"></span>
+        </div>
         <div
           class="flex justify-between items-center gap-2 bg-gray-100 rounded-md p-2 border-2"
         >
@@ -54,192 +60,7 @@
       <div
         id="newsContainer"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full"
-      >
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-        <!-- ! blog card 01 -->
-        <div
-          class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
-        >
-          <!-- * blog card image -->
-          <div class="h-60 w-full px-2 mx-auto rounded-md overflow-hidden">
-            <img
-              class="h-full w-full object-cover hover:scale-125 transition-transform duration-500 rounded-md"
-              src="https://www.livemint.com/lm-img/img/2024/05/22/1600x900/im-958638_1715339821957_1716372065589.jpg"
-            />
-          </div>
-          <!-- * blog card content -->
-          <div class="px-2">
-            <p class="text-2xl font-semibold truncate">
-              Here Is the titilesdfsd sdfsdfsd sdfsdfsd
-            </p>
-            <p class="max-h-28 text-justify leading-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              doloribus cum vitae, quo sint dicta doloremque magni dolore
-              accusantium nulla?
-            </p>
-          </div>
-        </div>
-      </div>
+      ></div>
     </main>
 
     <!-- JAvascript File Linkng -->
