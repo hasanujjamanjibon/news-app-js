@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>News App</title>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <!-- header section -  Navbar -->
     <header class="w-full h-16 bg-rose-600">
       <nav
@@ -31,6 +31,25 @@
         </div>
       </nav>
     </header>
+    <!-- main content -->
+    <main>
+      <!-- result & filter section -->
+      <div class="py-6 px-2 flex justify-between items-center">
+        <span id="searchResult" class="text-gray-700 font-medium"
+          >1555 Results</span
+        >
+        <div
+          class="flex justify-between items-center gap-2 bg-gray-100 rounded-md p-2 border-2"
+        >
+          <img src="./images/filter.png" class="h-6" alt="" />
+          <span class="text-gray-700 font-medium">Short & Filter</span>
+        </div>
+      </div>
+      <section
+        id="newsContainer"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+      ></section>
+    </main>
 
     <!-- JAvascript File Linkng -->
     <script src="./script.js"></script>
