@@ -19,7 +19,7 @@ async function loadNewsData() {
 
     // fetch data
     resultLength.innerHTML = `${news.length} Results`;
-    news?.forEach(({ urlToImage, title, description }) => {
+    news?.forEach(({ urlToImage, title, description, url }) => {
       newsContainer.innerHTML += `
     <div
     class="w-full lg:max-w-[375px] mx-auto h-fit relative space-y-4 group bg-gray-50 rounded-md overflow-hidden px-2 py-4 cursor-pointer"
@@ -37,7 +37,7 @@ async function loadNewsData() {
        ${title}
       </p>
       <p class="max-h-28 text-justify leading-5">
-       ${description}<span class="hover:underline text-rose-600 px-4">View More</span>
+       ${description}<a href="${url}" target="_blank" class="hover:underline text-rose-600 px-4">See More</a>
       </p>
     </div>
   </div>
