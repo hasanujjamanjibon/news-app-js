@@ -7,13 +7,11 @@ const searchBtn = document.querySelector("#search-btn");
 // load all news
 async function loadNewsData() {
   try {
-    const res = await fetch(
-      "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=714ea53a47f7470899e9132f9ab13f82"
-    );
+    const res = await fetch("./post.json");
     const news = await res.json();
     // fetch data
-    resultLength.innerHTML = `${news.articles.length} Results`;
-    displayResult(news.articles);
+    resultLength.innerHTML = `${news.length} Results`;
+    displayResult(news);
   } catch (error) {
     newsContainer.innerHTML = "Something Went Wrong";
   }
@@ -53,11 +51,9 @@ function displayResult(news) {
 
 searchBtn.addEventListener("click", async () => {
   const searchValue = searchText.value;
-  const res = await fetch(
-    "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=714ea53a47f7470899e9132f9ab13f82"
-  );
+  const res = await fetch("./post.json");
   const news = await res.json();
-  const result = await news.articles.filter((item) =>
+  const result = await news.filter((item) =>
     item.author.toLowerCase().startsWith(searchValue.trim().toLowerCase())
   );
 
