@@ -1,5 +1,3 @@
-console.log("Connected");
-
 const newsContainer = document.querySelector("#newsContainer");
 const resultLength = document.querySelector("#searchResult");
 const category = document.querySelector("#category");
